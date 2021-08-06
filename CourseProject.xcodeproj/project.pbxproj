@@ -19,6 +19,7 @@
 		CBE4EFEA26BDBECF005734DC /* WeekPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFE926BDBECF005734DC /* WeekPlanViewController.swift */; };
 		CBE4EFEC26BDBEDE005734DC /* FavoriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFEB26BDBEDE005734DC /* FavoriteRecipeViewController.swift */; };
 		CBE4EFEE26BDBEEC005734DC /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFED26BDBEEC005734DC /* GroceryListViewController.swift */; };
+		CBE4EFF026BDD2CB005734DC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFEF26BDD2CB005734DC /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CBE4EFE926BDBECF005734DC /* WeekPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekPlanViewController.swift; sourceTree = "<group>"; };
 		CBE4EFEB26BDBEDE005734DC /* FavoriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipeViewController.swift; sourceTree = "<group>"; };
 		CBE4EFED26BDBEEC005734DC /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
+		CBE4EFEF26BDD2CB005734DC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				CBE4EFE926BDBECF005734DC /* WeekPlanViewController.swift */,
 				CBE4EFEB26BDBEDE005734DC /* FavoriteRecipeViewController.swift */,
 				CBE4EFED26BDBEEC005734DC /* GroceryListViewController.swift */,
+				CBE4EFEF26BDD2CB005734DC /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				CBE4EFEC26BDBEDE005734DC /* FavoriteRecipeViewController.swift in Sources */,
 				CBE4EFE626BDBEAB005734DC /* AllRecipeViewController.swift in Sources */,
 				CBE4EFE826BDBEBB005734DC /* OneRecipeViewController.swift in Sources */,
+				CBE4EFF026BDD2CB005734DC /* TabBarViewController.swift in Sources */,
 				CBE4EFEA26BDBECF005734DC /* WeekPlanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
