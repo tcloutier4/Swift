@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
