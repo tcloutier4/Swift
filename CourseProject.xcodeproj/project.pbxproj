@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBA9ACD726C4BD2900BB1046 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */; };
+		CBA9ACD926C4BFC100BB1046 /* TheMealDbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */; };
 		CBE4EFCC26BDB01E005734DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFCB26BDB01E005734DC /* AppDelegate.swift */; };
 		CBE4EFCE26BDB01E005734DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFCD26BDB01E005734DC /* SceneDelegate.swift */; };
 		CBE4EFD026BDB01E005734DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE4EFCF26BDB01E005734DC /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
+		CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbApi.swift; sourceTree = "<group>"; };
 		CBE4EFC826BDB01E005734DC /* CourseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CourseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE4EFCB26BDB01E005734DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE4EFCD26BDB01E005734DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBA9ACD426C4BD1300BB1046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBA9ACD526C4BD1800BB1046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */,
+				CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CBE4EFBF26BDB01E005734DC = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +90,9 @@
 		CBE4EFCA26BDB01E005734DC /* CourseProject */ = {
 			isa = PBXGroup;
 			children = (
+				CBA9ACD526C4BD1800BB1046 /* Model */,
+				CBA9ACD426C4BD1300BB1046 /* View */,
 				CBE4EFE426BDB275005734DC /* Controller */,
-				CBE4EFE326BDB26E005734DC /* View */,
-				CBE4EFE226BDB24F005734DC /* Model */,
 				CBE4EFCB26BDB01E005734DC /* AppDelegate.swift */,
 				CBE4EFCD26BDB01E005734DC /* SceneDelegate.swift */,
 				CBE4EFCF26BDB01E005734DC /* ViewController.swift */,
@@ -83,20 +103,6 @@
 				CBE4EFD426BDB01E005734DC /* CourseProject.xcdatamodeld */,
 			);
 			path = CourseProject;
-			sourceTree = "<group>";
-		};
-		CBE4EFE226BDB24F005734DC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CBE4EFE326BDB26E005734DC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CBE4EFE426BDB275005734DC /* Controller */ = {
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE4EFD026BDB01E005734DC /* ViewController.swift in Sources */,
+				CBA9ACD926C4BFC100BB1046 /* TheMealDbApi.swift in Sources */,
 				CBE4EFCC26BDB01E005734DC /* AppDelegate.swift in Sources */,
 				CBE4EFEE26BDBEEC005734DC /* GroceryListViewController.swift in Sources */,
 				CBE4EFD626BDB01E005734DC /* CourseProject.xcdatamodeld in Sources */,
@@ -192,6 +199,7 @@
 				CBE4EFE826BDBEBB005734DC /* OneRecipeViewController.swift in Sources */,
 				CBE4EFF026BDD2CB005734DC /* TabBarViewController.swift in Sources */,
 				CBE4EFEA26BDBECF005734DC /* WeekPlanViewController.swift in Sources */,
+				CBA9ACD726C4BD2900BB1046 /* MealResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

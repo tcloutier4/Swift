@@ -277,10 +277,10 @@
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="note.text" catalog="system" width="128" height="106"/>
         <namedColor name="myBlue">
-            <color red="0.050000000000000003" green="0.22" blue="0.42999999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.05000000074505806" green="0.2199999988079071" blue="0.43000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="myGrey">
-            <color red="0.28000000000000003" green="0.33000000000000002" blue="0.41999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.2800000011920929" green="0.33000001311302185" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
