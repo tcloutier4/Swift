@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB42F77F26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */; };
+		CB54CDD026C635E10029C1D6 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB54CDCE26C635E10029C1D6 /* RecipeModel.xcdatamodeld */; };
+		CB54CDD226C6368A0029C1D6 /* FavoritesCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */; };
 		CB7C1CBF26C59926004BA7AA /* FilterSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1CBE26C59926004BA7AA /* FilterSettingsTableViewController.swift */; };
 		CB7C1CC126C599D3004BA7AA /* MealCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1CC026C599D3004BA7AA /* MealCategoryResponse.swift */; };
 		CB7C1CC326C59DC4004BA7AA /* FilterSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1CC226C59DC4004BA7AA /* FilterSettingsTableViewCell.swift */; };
-		CB7C1CC526C5B274004BA7AA /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1CC426C5B274004BA7AA /* Favorites.swift */; };
-		CB7C1CC826C5B6A1004BA7AA /* FavoriteMealList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB7C1CC726C5B6A1004BA7AA /* FavoriteMealList.plist */; };
 		CBA9ACD726C4BD2900BB1046 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */; };
 		CBA9ACD926C4BFC100BB1046 /* TheMealDbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */; };
 		CBA9ACDB26C4C58500BB1046 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9ACDA26C4C58500BB1046 /* MealTableViewCell.swift */; };
@@ -31,11 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedRecipeCoreDataManager.swift; sourceTree = "<group>"; };
+		CB54CDCF26C635E10029C1D6 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
+		CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoreDataManager.swift; sourceTree = "<group>"; };
 		CB7C1CBE26C59926004BA7AA /* FilterSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSettingsTableViewController.swift; sourceTree = "<group>"; };
 		CB7C1CC026C599D3004BA7AA /* MealCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategoryResponse.swift; sourceTree = "<group>"; };
 		CB7C1CC226C59DC4004BA7AA /* FilterSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSettingsTableViewCell.swift; sourceTree = "<group>"; };
-		CB7C1CC426C5B274004BA7AA /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
-		CB7C1CC726C5B6A1004BA7AA /* FavoriteMealList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FavoriteMealList.plist; sourceTree = "<group>"; };
 		CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
 		CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealDbApi.swift; sourceTree = "<group>"; };
 		CBA9ACDA26C4C58500BB1046 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 		CB7C1CC626C5B681004BA7AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CB7C1CC726C5B6A1004BA7AA /* FavoriteMealList.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -90,7 +91,9 @@
 				CBA9ACD626C4BD2900BB1046 /* MealResponse.swift */,
 				CB7C1CC026C599D3004BA7AA /* MealCategoryResponse.swift */,
 				CBA9ACD826C4BFC100BB1046 /* TheMealDbApi.swift */,
-				CB7C1CC426C5B274004BA7AA /* Favorites.swift */,
+				CB54CDCE26C635E10029C1D6 /* RecipeModel.xcdatamodeld */,
+				CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */,
+				CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,7 +207,6 @@
 				CBE4EFDB26BDB01E005734DC /* LaunchScreen.storyboard in Resources */,
 				CBE4EFD826BDB01E005734DC /* Assets.xcassets in Resources */,
 				CBE4EFD326BDB01E005734DC /* Main.storyboard in Resources */,
-				CB7C1CC826C5B6A1004BA7AA /* FavoriteMealList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +220,7 @@
 				CBA9ACDB26C4C58500BB1046 /* MealTableViewCell.swift in Sources */,
 				CBE4EFD026BDB01E005734DC /* ViewController.swift in Sources */,
 				CB7C1CC326C59DC4004BA7AA /* FilterSettingsTableViewCell.swift in Sources */,
+				CB54CDD226C6368A0029C1D6 /* FavoritesCoreDataManager.swift in Sources */,
 				CB7C1CC126C599D3004BA7AA /* MealCategoryResponse.swift in Sources */,
 				CB7C1CBF26C59926004BA7AA /* FilterSettingsTableViewController.swift in Sources */,
 				CBA9ACD926C4BFC100BB1046 /* TheMealDbApi.swift in Sources */,
@@ -226,10 +229,11 @@
 				CBE4EFD626BDB01E005734DC /* CourseProject.xcdatamodeld in Sources */,
 				CBE4EFCE26BDB01E005734DC /* SceneDelegate.swift in Sources */,
 				CBE4EFEC26BDBEDE005734DC /* FavoriteRecipeViewController.swift in Sources */,
+				CB54CDD026C635E10029C1D6 /* RecipeModel.xcdatamodeld in Sources */,
 				CBE4EFE626BDBEAB005734DC /* AllRecipeViewController.swift in Sources */,
+				CB42F77F26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift in Sources */,
 				CBE4EFE826BDBEBB005734DC /* OneRecipeViewController.swift in Sources */,
 				CBE4EFF026BDD2CB005734DC /* TabBarViewController.swift in Sources */,
-				CB7C1CC526C5B274004BA7AA /* Favorites.swift in Sources */,
 				CBE4EFEA26BDBECF005734DC /* WeekPlanViewController.swift in Sources */,
 				CBA9ACD726C4BD2900BB1046 /* MealResponse.swift in Sources */,
 			);
@@ -433,6 +437,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		CB54CDCE26C635E10029C1D6 /* RecipeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB54CDCF26C635E10029C1D6 /* RecipeModel.xcdatamodel */,
+			);
+			currentVersion = CB54CDCF26C635E10029C1D6 /* RecipeModel.xcdatamodel */;
+			path = RecipeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		CBE4EFD426BDB01E005734DC /* CourseProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

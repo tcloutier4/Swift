@@ -9,7 +9,8 @@ import UIKit
 
 class MealTableViewCell: UITableViewCell {
 
-    let dataManager = FavoritesDataManager()
+    let dataManager = FavoriteCoreDataManager()
+    
     
     @IBOutlet weak var mealNameLabel: UILabel!
     
@@ -21,7 +22,7 @@ class MealTableViewCell: UITableViewCell {
     
     @IBOutlet weak var favoriteButton: UIButton!
     
-    var isFavorite: [String] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -31,32 +32,36 @@ class MealTableViewCell: UITableViewCell {
 
     @objc private func handleMarkAsFavorite(){
 
-        if let index = isFavorite.firstIndex(of: mealNameLabel.text!){
+        if 1 == 0{
 
-            TheMealDbApi.searchMealByName(mealName: mealNameLabel.text!) { currentMealResponse in
+          //  TheMealDbApi.searchMealByName(mealName: mealNameLabel.text!) { currentMealResponse in
 
-                for currentMeal in currentMealResponse.meals{
-                   // self.dataManager.delete(at: currentMeal.idMeal)
-
-                }
-            }
-            isFavorite.remove(at: index)
+                //for currentMeal in currentMealResponse.meals{
+           // self.dataManager.fetchAllFavorites()
+                    //self.dataManager.deleteFavorite(at: index)
             favoriteButton.setImage(UIImage(systemName: "star"), for: .normal)
-        }
-        else{
-
+               // }
+        } else{
+//            isFavorite.remove(at: index)
             TheMealDbApi.searchMealByName(mealName: mealNameLabel.text!) { currentMealResponse in
                 for currentMeal in currentMealResponse.meals{
-  
-                    self.dataManager.add(currentMeal)
-
+                    let mealID = currentMeal.idMeal
+                    let mealName = currentMeal.strMeal
+                    let category = currentMeal.strCategory
+                    let mealThumb = currentMeal.strMealThumb
+                    print(mealID + mealName)
+                //    self.dataManager.addFavorite(withMealID: mealID, withMealName: mealName, withMealCategory: category, withMealThumb: mealThumb)
+                    
                 }
+                
             }
-            isFavorite.append(mealNameLabel.text!)
+
             favoriteButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
         }
-        
-        print(self.isFavorite)
+       
+
+            
+        }
     }
     
 //    @objc private func handleMarkAsFavorite(){
@@ -76,13 +81,13 @@ class MealTableViewCell: UITableViewCell {
 //            }
 //        }
 //    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
-    
-    
 
-}
+
