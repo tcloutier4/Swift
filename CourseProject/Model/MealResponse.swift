@@ -9,19 +9,20 @@ import Foundation
 
 struct MealResponse: Codable{
     var meals: [Meal]
+
 }
 
 struct Meal : Codable{
  
     var idMeal : String
     var strMeal : String
-    var strDrinkAlternate : String
+    //var strDrinkAlternate : String
     var strCategory : String
-    var strArea : String
+//    var strArea : String
     var strInstructions : String
     var strMealThumb : String
-    var strTags : String
-    var strYoutube : String
+//    var strTags : String
+//    var strYoutube : String
     var strIngredient1 : String
     var strIngredient2 : String
     var strIngredient3 : String
@@ -62,8 +63,8 @@ struct Meal : Codable{
     var strMeasure18 : String
     var strMeasure19 : String
     var strMeasure20 : String
-    var strSource : String
-    var strImageSource : String
-    var strCreativeCommonsConfirmed : String
-    var dateModified : Date
+//    var strSource : String
+//    var strImageSource : String
+//    var strCreativeCommonsConfirmed : String
+//    var dateModified : Date
 }
