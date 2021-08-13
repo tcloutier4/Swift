@@ -11,12 +11,13 @@ class AllRecipeViewController: UIViewController, UITableViewDelegate, UITableVie
 
     @IBOutlet weak var mealTableView: UITableView!
     
+    @IBOutlet weak var allRecipeSearchBar: UISearchBar!
     @IBOutlet weak var networkRequestIndicator:
         UIActivityIndicatorView!
    
     var mealArray: [Meal] = []
     var sortedMealArray: [Meal] = []
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

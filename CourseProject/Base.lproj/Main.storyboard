@@ -120,6 +120,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="All Recipes" image="book" catalog="system" id="a4m-dk-0oK"/>
                     <connections>
+                        <outlet property="allRecipeSearchBar" destination="n0b-ga-Fc1" id="LUl-pm-bE3"/>
                         <outlet property="mealTableView" destination="jtU-4N-GKz" id="6L5-jn-63F"/>
                         <outlet property="networkRequestIndicator" destination="emy-RZ-z8c" id="IpE-ig-YH6"/>
                     </connections>
@@ -279,6 +280,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Y3-wK-uaU">
                                 <rect key="frame" x="0.0" y="138" width="414" height="675"/>
                                 <color key="backgroundColor" name="myGrey"/>
+                                <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="DbT-xw-TVA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="677"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" name="myBlue"/>
+                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-4w-Q4F">
                                 <rect key="frame" x="354" y="98" width="30" height="30"/>
@@ -301,10 +310,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Grocery List" image="note.text" catalog="system" id="LYH-eQ-h3N"/>
+                    <connections>
+                        <outlet property="groceryTextView" destination="DbT-xw-TVA" id="AYo-LY-xwH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2E-Ta-Jtn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1297" y="958"/>
+            <point key="canvasLocation" x="-1297.1014492753625" y="957.58928571428567"/>
         </scene>
         <!--Week Plan-->
         <scene sceneID="byb-a9-m9b">

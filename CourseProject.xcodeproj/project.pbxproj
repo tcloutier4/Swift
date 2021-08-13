@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CB42F77F26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */; };
+		CB42F78326C709F300BBF810 /* InstructionsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB42F78226C709F300BBF810 /* InstructionsDataManager.swift */; };
 		CB54CDD026C635E10029C1D6 /* RecipeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB54CDCE26C635E10029C1D6 /* RecipeModel.xcdatamodeld */; };
 		CB54CDD226C6368A0029C1D6 /* FavoritesCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */; };
 		CB7C1CBF26C59926004BA7AA /* FilterSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7C1CBE26C59926004BA7AA /* FilterSettingsTableViewController.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedRecipeCoreDataManager.swift; sourceTree = "<group>"; };
+		CB42F78226C709F300BBF810 /* InstructionsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsDataManager.swift; sourceTree = "<group>"; };
 		CB54CDCF26C635E10029C1D6 /* RecipeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeModel.xcdatamodel; sourceTree = "<group>"; };
 		CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoreDataManager.swift; sourceTree = "<group>"; };
 		CB7C1CBE26C59926004BA7AA /* FilterSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CB54CDCE26C635E10029C1D6 /* RecipeModel.xcdatamodeld */,
 				CB54CDD126C6368A0029C1D6 /* FavoritesCoreDataManager.swift */,
 				CB42F77E26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift */,
+				CB42F78226C709F300BBF810 /* InstructionsDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				CBE4EFEC26BDBEDE005734DC /* FavoriteRecipeViewController.swift in Sources */,
 				CB54CDD026C635E10029C1D6 /* RecipeModel.xcdatamodeld in Sources */,
 				CBE4EFE626BDBEAB005734DC /* AllRecipeViewController.swift in Sources */,
+				CB42F78326C709F300BBF810 /* InstructionsDataManager.swift in Sources */,
 				CB42F77F26C6DF3300BBF810 /* SelectedRecipeCoreDataManager.swift in Sources */,
 				CBE4EFE826BDBEBB005734DC /* OneRecipeViewController.swift in Sources */,
 				CBE4EFF026BDD2CB005734DC /* TabBarViewController.swift in Sources */,

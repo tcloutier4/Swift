@@ -9,9 +9,15 @@ import UIKit
 
 class WeekPlanViewController: UIViewController {
 
+    @IBOutlet weak var weekPlanTableView: UITableView!
+    
+    let dataManager = SelectedRecipeCoreDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        weekPlanTableView.dataSource = self
+        weekPlanTableView.reloadData()
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +32,39 @@ class WeekPlanViewController: UIViewController {
     }
     */
 
+}
+
+extension WeekPlanViewController : UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataManager.selectedRecipes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mealCell", for: indexPath) as! MealTableViewCell
+        
+        let currentSelected = dataManager.selectedRecipes[indexPath.row]
+        cell.mealNameLabel.text = currentSelected.mealName
+        cell.categoryLabel.text = currentSelected.mealCategory
+        cell.imageView?.load(urlString: currentSelected.mealThumb!)
+        
+        return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("delete commencing")
+            dataManager.deleteSelectedRecipes(at: indexPath.row)
+            print("deleted from array")
+            
+            print("deleted from table")
+            print(dataManager.fetchAllSelectedRecipes())
+            tableView.reloadData()
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
+    
 }

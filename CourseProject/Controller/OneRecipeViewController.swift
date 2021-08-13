@@ -23,7 +23,7 @@ class OneRecipeViewController: UIViewController {
     
     @IBOutlet weak var instructionsTextView: UITextView!
     
-    
+   // var instructionsDataManager = InstructionsDataManager()
     
     var selectedDataManager = SelectedRecipeCoreDataManager()
     
@@ -50,20 +50,18 @@ class OneRecipeViewController: UIViewController {
                 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var ingredient1: String = ""
-        var ingredients = [String]()
-        var measurements = [String]()
-        
-      
-        
-        
-        
+
         TheMealDbApi.searchMealByName(mealName: selectedMealName!) { currentMealResponse in
 
             
             for currentMeal in currentMealResponse.meals{
                 self.mealImageView.load(urlString: currentMeal.strMealThumb)
+                
+                var ingredients: [String] = []
+                var measurements: [String] = []
+                var ingredientlist: String = ""
+                
+
                 
                 ingredients.append(currentMeal.strIngredient1)
                 if !currentMeal.strIngredient2.isEmpty {ingredients.append(currentMeal.strIngredient2)}
@@ -106,39 +104,42 @@ class OneRecipeViewController: UIViewController {
                 if !currentMeal.strMeasure18.isEmpty {measurements.append(currentMeal.strMeasure18)}
                 if !currentMeal.strMeasure19.isEmpty {measurements.append(currentMeal.strMeasure19)}
                 if !currentMeal.strMeasure20.isEmpty {measurements.append(currentMeal.strMeasure20)}
-                for i in stride(from: 0, through: ingredients.count-1, by: 1){
+                        
+                        
+                        for i in stride(from: 0, through: ingredients.count-1, by: 1){
                    
-                        if ingredient1.isEmpty{
-                            ingredient1.append(ingredients[i] + "    ")
-                            ingredient1.append(measurements[i])
+                            if ingredientlist.isEmpty{
+                                ingredientlist.append(ingredients[i] + "    ")
+                                ingredientlist.append(measurements[i])
                         }
-                        else{
-                            ingredient1.append("\n" + ingredients[i] + "    ")
-                            ingredient1.append(measurements[i])
+                            else{
+                                ingredientlist.append("\n" + ingredients[i] + "    ")
+                                ingredientlist.append(measurements[i])
                         }
                         
-                   
+                        }
+                        self.ingredientsTextView.text = ingredientlist
+                self.instructionsTextView.text = currentMeal.strInstructions
+                
+                    }
+            self.mealNameLabel.text = self.selectedMealName
                 }
                 
                 
 
+        
                 
                 
-                let instructionString = currentMeal.strInstructions
-
-                self.instructionsTextView.text = currentMeal.strInstructions
-                
-                
-                self.ingredientsTextView.text = ingredient1
+ 
                 
 
                 
             }
         }
         
-        mealNameLabel.text = selectedMealName
+
         // Do any additional setup after loading the view.
-    }
+    
     
     
     
@@ -153,7 +154,7 @@ class OneRecipeViewController: UIViewController {
     }
     */
 
-        }
+        
 
 
 //extension OneRecipeViewController{
