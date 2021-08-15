@@ -193,6 +193,9 @@
                                                         <constraint firstAttribute="height" constant="25" id="NTN-v2-MAX"/>
                                                     </constraints>
                                                     <state key="normal" image="star" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="favoriteButton:" destination="dTn-Kh-VoW" eventType="touchUpInside" id="WIw-FF-PAe"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM1-2S-emj">
                                                     <rect key="frame" x="255" y="11.5" width="124" height="21"/>
@@ -221,7 +224,7 @@
                                         <color key="backgroundColor" name="myGrey"/>
                                         <connections>
                                             <outlet property="categoryLabel" destination="nM1-2S-emj" id="jnQ-BB-LS2"/>
-                                            <outlet property="favoriteButton" destination="3SH-Eq-a1x" id="cby-dA-DKd"/>
+                                            <outlet property="favoriteButton" destination="3SH-Eq-a1x" id="1fx-ef-6c5"/>
                                             <outlet property="mealImageView" destination="bYx-mq-LkW" id="Sii-om-nn4"/>
                                             <outlet property="mealNameLabel" destination="Hgg-lG-Mtp" id="buX-aQ-2Hy"/>
                                             <segue destination="Uxj-9S-n9k" kind="show" identifier="favOneRecipe" id="dS9-9a-CT4"/>
@@ -624,8 +627,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Suj-ER-VV3"/>
-        <segue reference="UoL-y1-Fve"/>
+        <segue reference="ZgH-mG-10Q"/>
+        <segue reference="dS9-9a-CT4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="102"/>

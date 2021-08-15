@@ -14,6 +14,7 @@ class FavoriteCoreDataManager{
     
     var selectedRecipes:[SelectedRecipes] = []
     var favorites:[Favorites] = []
+    
     func fetchAllFavorites() -> [Favorites]{
         let request: NSFetchRequest<Favorites> = Favorites.fetchRequest()
         guard let results = try? persistentContainer.viewContext.fetch(request)
@@ -23,9 +24,21 @@ class FavoriteCoreDataManager{
         return results
     }
     
-//    func fetchOneFavorite(mealID: String) -> Favorites{
-//        let request: NSFetchRequest<Favorites> = Favorites.fetchRequest()
-//    }
+    func fetchOneFavorite(mealName: String) -> Int{
+        let request: NSFetchRequest<Favorites> = Favorites.fetchRequest()
+        guard let results = try? persistentContainer.viewContext.fetch(request)
+        else{
+            return -1
+        }
+        let index = results.count
+        for i in stride(from: 0, through: index-1, by: 1){
+            if results[i].mealName == mealName{
+                return i
+            }
+            else {return -1}
+        }
+        return -1
+    }
     
     init(){
         favorites = fetchAllFavorites()

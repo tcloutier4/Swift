@@ -15,6 +15,7 @@ class FavoriteRecipeViewController: UIViewController {
     
     let dataManager = FavoriteCoreDataManager()
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

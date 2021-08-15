@@ -77,12 +77,9 @@ class SelectedRecipeCoreDataManager{
     // MARK: - Core Data Saving support
 
     func saveContext () {
-        print("in save")
         let context = persistentContainer.viewContext
-        print(context)
         if context.hasChanges {
             do {
-                print("in save do catch")
                 try context.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.

@@ -101,7 +101,13 @@ class GroceryListViewController: UIViewController {
             
         
                     
-                }}}
+                }
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        groceryTextView.reloadInputViews()
+    }
+}
             
         // Do any additional setup after loading the view.
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AllRecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AllRecipeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var mealTableView: UITableView!
     
@@ -15,6 +15,8 @@ class AllRecipeViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var networkRequestIndicator:
         UIActivityIndicatorView!
    
+    var dataManager = FavoriteCoreDataManager()
+    
     var mealArray: [Meal] = []
     var sortedMealArray: [Meal] = []
 
@@ -59,6 +61,7 @@ class AllRecipeViewController: UIViewController, UITableViewDelegate, UITableVie
 
     func tableView(_ tableView:UITableView , cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mealCell", for: indexPath) as! MealTableViewCell
+        
 
 
         let meal = sortedMealArray[indexPath.row]
@@ -121,3 +124,4 @@ extension UIImageView{
 
     }
 }
+

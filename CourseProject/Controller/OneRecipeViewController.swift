@@ -31,7 +31,7 @@ class OneRecipeViewController: UIViewController {
     
     @IBAction func addRecipe(_ sender: Any) {
   
-            print("tap")
+        print("taprecipe")
             TheMealDbApi.searchMealByName(mealName: selectedMealName!) { currentMealResponse in
            
                 
@@ -43,7 +43,7 @@ class OneRecipeViewController: UIViewController {
                     
                     self.selectedDataManager.addSelectedRecipes(withMealID: mealID, withMealName: mealName, withMealCategory: mealCategory, withMealThumb: mealThumb)
             
-        
+ 	
                     
                 }}}
                 
